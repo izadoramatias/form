@@ -1,0 +1,161 @@
+:root{
+
+  /* COLORS */
+  --blue-dark:#080712;
+  --aquamarine: #19d18e;
+  --ice-white: #e4f0eb;
+  --gray: #c5c5c5bb;
+
+  /* FONTS */
+  --title-font: 3rem;
+  --normal-font: 1.01rem;
+  --medium-font: 2rem;
+  --font-family: 'Poppins', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body, html{
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body{
+  background-color: var(--blue-dark);
+  font-family: var(--font-family);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main{
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns:  repeat(2, 6fr);
+}
+
+#signIn{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: tomato; */
+  margin: 0 auto;
+}
+
+#signIn-with{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signIn h3{
+  font-size: var(--title-font);
+  color: var(--ice-white);
+  position: relative;
+}
+
+#signIn h3.underline::before{
+  content: '';
+  height: 4px;
+  width: 43px;
+  position: absolute;
+  bottom: 14px;
+  background: linear-gradient(45deg, var(--ice-white), var(--aquamarine), var(--blue-dark));
+  border-radius: 6rem;
+}
+
+/* Eesconde a label sem remove-la literalmente da página */
+#signIn label{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#signIn .p1{
+  color: var(--gray);
+  padding-top: .50rem;
+  padding-bottom: 1.5rem;
+  font-size: var(--normal-font);
+  font-weight: normal;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+#signIn input{
+  padding: 1.5rem 100% 1rem 1rem;
+  font-size: .7rem;
+  outline: none;
+  background-color: var(--blue-dark);
+  border-radius: .75rem;
+  color: var(--ice-white);
+
+  transition: filter ease .5s ;
+}
+
+#signIn input:hover{
+  filter: brightness(1.6);
+}
+
+#signIn button.button,
+
+#signIn input{
+  margin: 0 auto;
+}
+
+#signIn button.button{
+  margin-top: 1rem;
+  padding: 1rem 67%;
+  background-color: var(--aquamarine);
+  color: var(--blue-dark);
+  font-weight: 600;
+  font-size: .9rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: filter ease .5s;
+}
+
+#signIn button.button:hover{
+  filter: brightness(1.4);
+}
+
+#signIn a.forgot{
+  padding: .5rem;
+  color: var(--aquamarine);
+  font-size: .86rem;
+  
+}
+
+#signIn .p2{
+  color: var(--gray);
+  font-size: .86rem;
+
+  position: absolute;
+  bottom: 5%;
+}
+
+#signIn .p2 a strong{
+  color: var(--aquamarine);
+}
+
