@@ -159,3 +159,50 @@ form{
   color: var(--aquamarine);
 }
 
+#signIn-with{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  /* background-color: tomato; */
+
+}
+
+#signIn-with p{
+  color: var(--gray);
+  font-size: 1.1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+#signIn-with p::before{
+  content: '';
+  height: 1.3px;
+  width: 70px;
+  background-color: var(--gray);
+
+  position: absolute;
+  bottom: 50%;
+  left: -45%;
+}
+
+#signIn-with p::after{
+  content: '';
+  height: 1.3px;
+  width: 70px;
+  background-color: var(--gray);
+  position: absolute;
+  bottom: 50%;
+  right: -45%;
+}
+
+#signIn-with .icons i{
+  font-size: 1.5rem;
+  padding: .5rem;
+  color: var(--aquamarine);
+  transition: transform ease .3s;  
+}
+
+#signIn-with .icons i:hover{
+  transform: translateY(-4px);
+}
