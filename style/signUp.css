@@ -168,3 +168,14 @@ main{
 #signUp-with .icons i:hover{
   transform: translateY(-4px);
 }
+
+@media (max-width: 420px){
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #signUp-with{
+    margin-top: 1.5rem;
+  }
+}

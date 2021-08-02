@@ -51,7 +51,6 @@ main{
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  /* background-color: tomato; */
   margin: 0 auto;
 }
 
@@ -119,7 +118,6 @@ form{
 }
 
 #signIn button.button,
-
 #signIn input{
   margin: 0 auto;
 }
@@ -205,4 +203,26 @@ form{
 
 #signIn-with .icons i:hover{
   transform: translateY(-4px);
+}
+
+@media (max-width: 420px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #signIn{
+    width: 100%;
+  }
+
+  #signIn form input{
+    padding: 1.5rem; 
+    margin: 5px;
+    width: 250px;  
+  }
+
+  #signIn button.button{
+    padding: 1.5rem;
+    width: 100%;
+  }
 }

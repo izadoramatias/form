@@ -76,3 +76,32 @@ section{
   color: inherit;
 }
 
+@media (max-width: 420px){
+ :root{
+   /* FONTS SIZE */
+   --font-size: 1.5rem;
+
+ }
+
+ /* HOME */
+  body{
+  margin: 2rem;
+  overflow: hidden;
+ }
+
+ main{
+  min-width: 100%;
+  height: 200px;
+}
+
+ #welcome{
+  display: flex;
+ }
+
+ #welcome a.button{
+  flex-grow: 1;
+  height: 70px;
+  font-size: var(--font-size);
+  text-align: center;
+ }
+}
